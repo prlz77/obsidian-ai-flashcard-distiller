@@ -1,0 +1,28 @@
+{
+    "name": "ai-flashcard-distiller",
+    "version": "1.0.0",
+    "description": "Generate high-value flashcards from notes using LLM via AI Providers plugin",
+    "main": "main.js",
+    "scripts": {
+        "dev": "node esbuild.config.mjs",
+        "build": "node esbuild.config.mjs production"
+    },
+    "keywords": [
+        "obsidian",
+        "llm",
+        "flashcards",
+        "spaced-repetition"
+    ],
+    "author": "Pau",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "builtin-modules": "^5.0.0",
+        "esbuild": "0.21.5",
+        "obsidian": "latest",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "@obsidian-ai-providers/sdk": "^1.6.0"
+    }
+}
