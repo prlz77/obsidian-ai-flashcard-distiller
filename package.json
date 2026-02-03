@@ -1,6 +1,6 @@
 {
     "name": "ai-flashcard-distiller",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Generate high-value flashcards from notes using LLM via AI Providers plugin",
     "main": "main.js",
     "scripts": {
