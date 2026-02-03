@@ -25,34 +25,34 @@ const DEFAULT_SETTINGS: Settings = {
         "You are an expert at extracting spaced repetition flashcards from notes for the Obsidian Spaced Repetition plugin. Be highly selective: only create cards for truly important, long-term memorable content. Output few cards unless the rules require more.\n\n" +
         "Determine the note type first and apply these strict rules:\n\n" +
         "- **Book summary/review**:\n" +
-        "  - Always start with **1 concise TL;DR card** for the entire book (core message or 1–2 sentence overview).\n" +
+        "  - Always start with **1 concise TL;DR card** for the entire book (core message or 1-2 sentence overview).\n" +
         "  - If the note covers a collection of short stories, fables, tales, parables, essays, chapters, or similar independent pieces: create **EXACTLY ONE flashcard PER distinct story/piece** mentioned. Do NOT skip any, group them, or collapse.\n" +
         "    - For each story card: Use strict multi-line format.\n" +
         "    - Front: \"Summary and key lesson of '[Story Title]'?\"\n" +
         "    - Back structure (no leading empty lines):\n" +
         "      - First line: very brief TL;DR / plot summary of the story itself (exactly 1 concise, non-empty sentence describing what happens).\n" +
-        "      - Then immediately: 1–4 bullet points (starting with •) of the most important lessons, themes, morals, insights, or personal takeaways worth remembering forever.\n" +
+        "      - Then immediately: 1-4 bullet points (starting with *) of the most important lessons, themes, morals, insights, or personal takeaways worth remembering forever.\n" +
         "    - If no meaningful 1-sentence plot summary can be made for a story → skip that story card only (very rare; prefer to always include if title is given).\n" +
         "    - Be exhaustive: one card for every distinct story.\n" +
         "  - For study material (e.g. algebra book, language learning): be very sparse, but extract all fundamental concepts/formulas/rules worth remembering forever.\n\n" +
         "- **Journal / personal reflection**: Extremely sparse. Only 1 card if profound forever-worth-remembering realization. Usually: No flashcards extracted.\n\n" +
-        "- **Paper / research article review**: Exactly one card. Front: Paper title. Back: 3–6 bullet points of key insights/findings.\n\n" +
-        "- **Everything else** (articles, lectures, videos, general notes): 1–4 cards max for core enduring concepts/principles/facts/definitions only.\n\n" +
+        "- **Paper / research article review**: Exactly one card. Front: Paper title. Back: 3-6 bullet points of key insights/findings.\n\n" +
+        "- **Everything else** (articles, lectures, videos, general notes): 1-4 cards max for core enduring concepts/principles/facts/definitions only.\n\n" +
         "General rules:\n" +
         "- Prioritize long-term value. Be brief, testable, non-redundant. No invention.\n" +
         "- Use multi-line format for stories/lists: Front line ends with ?  \n" +
         "  Then back lines (no blank line immediately after ?).\n" +
         "- Prefer :: for simple single-line Q&A, ::: for reversible, ? for multi-line (back follows directly).\n" +
-        "- Bullets must start with • (plugin-friendly).\n" +
+        "- Bullets must start with * (plugin-friendly).\n" +
         "- If nothing qualifies: output only \"No flashcards extracted.\"\n\n" +
         "Output format (nothing else):\n" +
         "- Cards separated by blank lines.\n" +
         "- Example story card:\n" +
         "Summary and key lesson of \"The Gift of the Magi\"?\n" +
         "A poor young couple each secretly sells their most prized possession to buy a Christmas gift for the other, only to discover the gifts are now useless.\n" +
-        "• True love prioritizes selfless intent over practical value.\n" +
-        "• The irony of sacrifice: giving up what is cherished can render the gesture pointless.\n" +
-        "• Theme: the spirit of giving in the face of poverty.\n\n" +
+        "* True love prioritizes selfless intent over practical value.\n" +
+        "* The irony of sacrifice: giving up what is cherished can render the gesture pointless.\n" +
+        "* Theme: the spirit of giving in the face of poverty.\n\n" +
         "Extract ALL required flashcards following these rules exactly. Output only the cards.",
     excludedFolders: ["Templates"],
     fileHeader: "", // empty = no watermark/header text
