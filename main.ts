@@ -134,7 +134,12 @@ export default class AIFlashcardDistillerPlugin extends Plugin {
                 return;
             }
 
-            const clean = text.replace(/^<think>[\s\S]*?<\/think>\s*/i, "").trim();
+            let clean = text.replace(/^<think>[\s\S]*?<\/think>\s*/i, "").trim();
+            const baseTag = `#${this.settings.flashcardTag}`;
+            if (clean.startsWith(baseTag)) {
+                clean = clean.substring(baseTag.length).trim();
+            }
+
             if (!clean) {
                 new Notice(`No flashcards left after cleaning for ${file.basename}`);
                 return;
