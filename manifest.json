@@ -1,7 +1,7 @@
 {
     "id": "ai-flashcard-distiller",
     "name": "AI Flashcard Distiller",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minAppVersion": "1.5.0",
     "description": "Generate high-value flashcards from notes using AI (via AI Providers). Optimized for the Spaced Repetition plugin.",
     "author": "prlz77",
